@@ -84,12 +84,39 @@ button:hover {
     color: #28a745; /* สีเขียว */
 }
 
+/* Media Queries สำหรับอุปกรณ์ขนาดเล็ก (โทรศัพท์มือถือ) */
+@media (max-width: 600px) {
+    .comparison-container {
+        flex-direction: column; /* เปลี่ยนจากแถวเป็นคอลัมน์ */
+    }
 
-.comparison-container div {
-    text-align: center;
-    flex: 1;
-    background: #f0f0f0;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    .comparison-container div {
+        margin-bottom: 20px; /* เพิ่มระยะห่างระหว่างแต่ละกล่อง */
+    }
+
+    #timer {
+        padding: 15px;
+        font-size: 14px; /* ลดขนาดตัวอักษร */
+    }
+
+    button {
+        font-size: 14px; /* ลดขนาดปุ่ม */
+        padding: 8px 15px;
+    }
+
+    #timer-display {
+        font-size: 24px; /* ลดขนาดแสดงเวลา */
+    }
 }
+
+/* Media Queries สำหรับอุปกรณ์ขนาดใหญ่ (หน้าจอ desktop) */
+@media (min-width: 1024px) {
+    button:hover {
+        transform: scale(1.1); /* ขยายขนาดเล็กน้อยเมื่อชี้ */
+    }
+}
+
+    }
+}
+
+
