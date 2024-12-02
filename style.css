@@ -1,3 +1,4 @@
+/* โค้ด CSS สำหรับการปรับ UI */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -38,6 +39,51 @@ section {
     justify-content: space-between;
     gap: 20px;
 }
+
+.comparison-container div {
+    text-align: center;
+    flex: 1;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* โค้ด CSS สำหรับการตั้งเวลา */
+#timer {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#timer-display {
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#lid-status {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #28a745; /* สีเขียว */
+}
+
 
 .comparison-container div {
     text-align: center;
